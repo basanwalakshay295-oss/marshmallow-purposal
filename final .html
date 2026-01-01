@@ -1,0 +1,128 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>For You Khushi ❤️</title>
+<style>
+body {
+ font-family: 'Poppins', sans-serif;
+ margin: 0;
+ padding: 0;
+ overflow-x: hidden;
+ background: radial-gradient(rgba(255,0,80,0.3), rgba(0,0,0,0.8));
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+ color: #fff;
+ text-align: center;
+}
+.page {
+ display: none;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ padding: 5vw;
+ animation: fadeIn 1.5s ease;
+}
+.active { display: flex; }
+.glass-heart {
+ width: 40vw;
+ max-width: 250px;
+ height: 40vw;
+ max-height: 250px;
+ background: rgba(255,255,255,0.1);
+ backdrop-filter: blur(10px);
+ border-radius: 50% 50% 40% 40% / 60% 60% 40% 40%;
+ box-shadow: 0 0 20px rgba(255,0,90,.7);
+ margin-bottom: 5vw;
+ animation: pulse 2s infinite;
+}
+@keyframes pulse { 0% {transform: scale(1);} 50% {transform: scale(1.07);} 100% {transform: scale(1);} }
+@keyframes fadeIn { from {opacity:0;} to {opacity:1;} }
+.typewriter{
+ overflow:hidden; white-space:wrap; border-right:2px solid #fff;
+ animation: typing 6s steps(120) forwards, blink .8s infinite;
+ font-size:4vw;
+}
+@keyframes typing { from{width:0;} to{width:100%;} }
+@keyframes blink {50%{border-color:transparent;} }
+button { padding: 3vw 5vw; background:#ff4b7a; border:none; color:#fff; font-size:4vw; border-radius:30px; cursor:pointer; box-shadow:0 0 15px rgba(255,0,80,.6); transition:.3s; margin-top:4vw; }
+button:hover {transform:scale(1.1);} 
+#final {font-size:5vw;}
+.firework{position:fixed;width:3vw;height:3vw;background:white;border-radius:50%;animation:boom 800ms ease-out forwards;}
+@keyframes boom{from{transform:scale(1);}to{transform:translate(calc(-50px + 100px * var(--x)), calc(-50px + 100px * var(--y))) scale(0);}}
+.heart{position:fixed;top:-10px;font-size:5vw;color:#ff236e;animation:fall linear infinite;opacity:.9;}
+@keyframes fall{to{transform:translateY(110vh);}}
+</style>
+</head>
+<body>
+<audio id="bgm" autoplay loop>
+ <source src="https://dl.dropboxusercontent.com/scl/fi/7maJOI3QMu0" type="audio/mp3">
+</audio><section class="page active" id="p1">
+ <div class="glass-heart"></div>
+ <h2 class="typewriter">The Magic of Her Presence</h2>
+ <p style="font-size:4vw; line-height:1.6;">To the girl who changed my world, just being near you feels like a dream. Your presence has this magical way of calming my soul. Whether we are talking for hours or sitting in silence, everything feels right when you are there. You aren't just a part of my life; you are the heart of it. Thank you for being the light that brightens my darkest days.</p>
+ <button onclick="next(2)">Next</button>
+</section>
+<section class="page" id="p2">
+ <div class="glass-heart"></div>
+ <h2 class="typewriter">Her Cute & Chubby Charm (The Adorable Side)</h2>
+ <p style="font-size:4vw; line-height:1.6;">I have to tell you, you are the most adorable person I’ve ever met. Those soft, chubby cheeks of yours are my favorite thing in the world—I could look at you forever. Your cuteness isn't just about how you look; it’s in the way you smile, the way you laugh, and even the way you get annoyed. You are like a real-life teddy bear that I never want to let go of.</p>
+ <button onclick="next(3)">Next</button>
+</section>
+<section class="page" id="p3">
+ <div class="glass-heart"></div>
+ <h2 class="typewriter">Her Beautiful Soul</h2>
+ <p style="font-size:4vw; line-height:1.6;">Beyond your beautiful face lies an even more beautiful soul. Your kindness, your compassion, and the way you care for the people around you make me admire you more every single day. You have a heart of gold, and I feel so lucky to be the one who gets to keep it. You make me want to be a better man just to be worthy of you.</p>
+ <button onclick="next(4)">Next</button>
+</section>
+<section class="page" id="p4">
+ <div class="glass-heart"></div>
+ <h2 class="typewriter">Her Infectious Smile & Laughter</h2>
+ <p style="font-size:4vw; line-height:1.6;">Your smile is my favorite sight, and your laugh is my favorite soundtrack. Whenever you laugh, the whole world seems to fade away, and all I can see is your happiness. It’s infectious, pure, and so genuine. Never let the world take that smile away from you, because it is the most beautiful thing I own.</p>
+ <button onclick="next(5)">Next</button>
+</section>
+<section class="page" id="p5">
+ <div class="glass-heart"></div>
+ <h2 class="typewriter">The Strength She Possesses</h2>
+ <p style="font-size:4vw; line-height:1.6;">I admire your strength and the way you handle everything with such grace. You are much stronger than you give yourself credit for. Even on tough days, you keep going, and your resilience inspires me. I want you to know that I am always in your corner, cheering for you and supporting you through every high and low.</p>
+ <button onclick="next(6)">Next</button>
+</section>
+<section class="page" id="p6">
+ <div class="glass-heart"></div>
+ <h2 class="typewriter">The Little Things That Matter</h2>
+ <p style="font-size:4vw; line-height:1.6;">It’s the little things you do that make me fall for you over and over again. The way you remember small details, the way you look at me when you think I’m not watching, and the way you make me feel safe. These tiny moments build the huge love I have for you. You are perfect in all your little imperfections.</p>
+ <button onclick="next(7)">Next</button>
+</section>
+<section class="page" id="p7">
+ <div class="glass-heart"></div>
+ <h2 class="typewriter">My Comfort Zone (Home)</h2>
+ <p style="font-size:4vw; line-height:1.6;">They say 'home' is a place, but for me, home is a person—and that person is you. With you, I can be my truest self without any fear of judgment. You are my safe haven, my comfort zone, and my peace. No matter how chaotic life gets, as long as I have you to come back to, I know I’ll be okay.</p>
+ <button onclick="next(8)">Next</button>
+</section>
+<section class="page" id="p8">
+ <div class="glass-heart"></div>
+ <h2 class="typewriter">A Promise for the Future</h2>
+ <p style="font-size:4vw; line-height:1.6;">As I write this, I want to make a promise to you. I promise to cherish you, to respect you, and to love you more with every passing day. I promise to always find reasons to make you smile and to be the person you can always lean on. You are my today and all of my tomorrows. I love you exactly as you are—cute, beautiful, and mine.</p>
+ <button onclick="next(9)">Next</button>
+</section>
+<section class="page" id="p9">
+ <h1 id="final">Khushi (Marshmallows) ❤️ Will You Be Mine Forever?</h1>
+ <div class="choice"><button onclick="yes()">Yes, I Love You Too 💍</button></div>
+</section>
+<section class="page hidden" id="secret">
+ <h1>Hidden Love Note 💗</h1>
+ <p style="font-size:4vw; line-height:1.6;">Thank you for choosing me. – Yours, Asshu ❤️</p>
+</section>
+<script>
+let page=1;
+function next(n){document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));document.getElementById('p'+n).classList.add('active');page=n;}
+let play=true;
+function toggleMusic(){let m=document.getElementById('bgm'); if(play){m.pause();}else{m.play();}play=!play;}
+setInterval(()=>{let h=document.createElement('div');h.innerHTML='💗';h.className='heart';h.style.left=Math.random()*100+'vw';h.style.animationDuration=(3+Math.random()*3)+'s';document.body.appendChild(h);setTimeout(()=>h.remove(),5000);},300);
+function yes(){for(let i=0;i<50;i++){let f=document.createElement('div');f.className='firework';f.style.setProperty('--x',Math.random()*2-1);f.style.setProperty('--y',Math.random()*2-1);f.style.left=window.innerWidth/2+'px';f.style.top=window.innerHeight/2+'px';document.body.appendChild(f);setTimeout(()=>f.remove(),800);}secret();}
+function secret(){document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));document.getElementById('secret').classList.add('active');}
+</script>
+</body>
+</html>
